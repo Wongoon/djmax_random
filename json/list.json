@@ -24154,17 +24154,6 @@
             }
         ]
     },
-    "collaboration": [
-        "guiltygear",
-        "girlsfrontline",
-        "groovecoaster",
-        "deemo",
-        "cytus",
-        "chunithm",
-        "estimate",
-        "nexon",
-        "musedash"
-    ],
     "dlcEng": {
         "respect": "respect",
         "portable1": "portable1",
@@ -24172,23 +24161,23 @@
         "portable3": "portable3",
         "trilogy": "trilogy",
         "clazziquai": "clazziquai",
-        "blacksquare": "blacksquare",
-        "vextension": "vextension",
-        "vextension2": "vextension2",
-        "emotionalsense": "emotinalsense",
-        "technika1": "technika1",
-        "technika2": "technika2",
-        "technika3": "technika3",
-        "technikatuneq": "technikatuneq",
-        "guiltygear": "guiltygear",
-        "girlsfrontline": "girlsfrontline",
-        "groovecoaster": "groovecoaster",
+        "blacksquare": "black square",
+        "vextension": "v extension",
+        "vextension2": "v extension 2",
+        "emotionalsense": "emotinal sense",
+        "technika1": "technika 1",
+        "technika2": "technika 2",
+        "technika3": "technika 3",
+        "technikatuneq": "technika tune q",
+        "guiltygear": "guilty gear",
+        "girlsfrontline": "girls frontline",
+        "groovecoaster": "groove coaster",
         "deemo": "deemo",
         "cytus": "cytus",
         "chunithm": "chunithm",
         "estimate": "estimate",
         "nexon": "nexon",
-        "musedash": "musedash"
+        "musedash": "muse dash"
     },
     "dlcKor": {
         "respect": "리스펙트",
