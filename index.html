@@ -2,14 +2,23 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>DJMAX RANDOM</title>
-    <link rel="stylesheet" href="css/main.css">
+    <title>DJMAX Tool</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
     <header>
-        <a href="index.html">DJMAX<br>RANDOM</a>
+        <div class="title">DJMAX Tool</div>
     </header>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let menu = document.querySelector('.menu');
+        toggle.onclick = function () {
+            menu.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

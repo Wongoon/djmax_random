@@ -1,0 +1,19 @@
+@import url(reset.css);
+body{
+    /* background: linear-gradient(45deg, #8460ed, #ff1252); */
+    background: url(http://djmaxrespect.com/teaser/img/cover.jpg) center top no-repeat;
+    background-size: cover;
+    display: block;
+}
+header{
+    width: 100%;
+    height: 150px;
+    background: #9340ed;
+    top: 0;
+}
+.title{
+    width: 200px;
+    height: 150px;
+    line-height: 150px;
+    color: #fff;
+}
