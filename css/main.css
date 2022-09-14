@@ -1,4 +1,7 @@
 @import url(reset.css);
+:root{
+    --mainclr: #3f51b5;
+}
 header{
     width: 100%;
     height: 200px;
