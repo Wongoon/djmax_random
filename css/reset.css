@@ -3,9 +3,19 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'NanumSquare', sans-serif;
     box-sizing: border-box;
 }
+
+:root{
+    --body-clr: #e4e9f7;
+    --sidebar-clr: #fff;
+    --primary-clr: #695cfe;
+    --primary-clr-light: #f6f5ff;
+    --toggle-clr: #ddd;
+    --text-clr: #707070;
+}
+
 body{
     display: flex;
     justify-content: center;
