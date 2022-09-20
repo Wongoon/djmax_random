@@ -163,6 +163,7 @@ body.dark .sidebar li a:hover .text{
     background: var(--primary-clr-light);
     position: relative;
     transition: 0.5s all ease;
+    cursor: pointer;
 }
 .menu-bar .mode .sun-moon{
     height: 50px;
@@ -189,7 +190,6 @@ body.dark .mode .sun-moon i.moon{
     align-items: center;
     justify-content: center;
     border-radius: 6px;
-    cursor: pointer;
 }
 .toggle-switch .switch{
     position: relative;
