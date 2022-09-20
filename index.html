@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title>DJMAX Tool</title>
+    <script src="javascript/jquery-1.12.3.js"></script>
+    <script src="javascript/tabmenu.js"></script>
 </head>
 <body>
     <nav class="sidebar close">
@@ -26,57 +28,26 @@
                     <input type="text" placeholder="Search..." readonly id="search">
                 </li>
                 <ul class="menu-links">
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-home-alt icon'></i>
-                            <span class="text nav-text">Home</span>
-                        </a>
+                    <li class="nav-link active" data-tab="tab-01">
+                        <i class='bx bx-home-alt icon'></i>
+                        <span class="text nav-text">Home</span>
                     </li>
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-shuffle icon'></i>
-                            <span class="text nav-text">Random</span>
-                        </a>
+                    <li class="nav-link" data-tab="tab-02">
+                        <i class='bx bx-shuffle icon'></i>
+                        <span class="text nav-text">Random</span>
                     </li>
                 </ul>
             </div>
-            <div class="bottom-content">
-                <!-- <li class="sign">
-                    <div id="logout">
-                        <a href="#">
-                            <i class='bx bx-log-out icon'></i>
-                            <span class="text nav-text">Logout</span>
-                        </a>
-                    </div>
-                    <div id="login">
-                        <a href="#">
-                            <ion-icon name="log-in-outline"></ion-icon>
-                            <span class="text nav-text">Login</span>
-                        </a>
-                        <a href="#">
-                            <ion-icon name="log-out-outline"></ion-icon>
-                            <span class="text nav-text">Sign Up</span>
-                        </a>
-                    </div>
-                </li> -->
-                <li class="mode">
-                    <div class="sun-moon">
-                        <i class='bx bx-moon icon moon'></i>
-                        <i class='bx bx-sun icon sun'></i>
-                    </div>
-                    <span class="mode-text text">Dark mode</span>
-
-                    <div class="toggle-switch">
-                        <span class="switch"></span>
-                    </div>
-                </li>
-            </div>
         </div>
     </nav>
-
-    <section class="home">
-        <div class="text">Dashboard Sidebar</div>
-    </section>
+    <div class="container">
+        <section id="tab-01" class="tab-content active">
+            tab1
+        </section>
+        <section id="tab-02" class="tab-content">
+            tab2
+        </section>
+    </div>
     <script src="javascript/index.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
