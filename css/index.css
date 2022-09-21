@@ -1,2 +1,18 @@
-@import url(reset.css);
 @import url(main.css);
+
+.container #tab-01 .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container #tab-01 .title .image{
+    width: 80px;
+    margin: 15px;
+}
+.container #tab-01 .title .image img{
+    width: 100%;
+    border-radius: 10px;
+}
+.container #tab-01 .title .text{
+    font-size: 2em;
+}
