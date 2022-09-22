@@ -1,18 +1,76 @@
 @import url(main.css);
 
-.container #tab-01 .title{
+/* -------------- tab - 01 -------------- */
+
+#tab-01 .title{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.container #tab-01 .title .image{
+#tab-01 .title .image{
     width: 80px;
     margin: 15px;
 }
-.container #tab-01 .title .image img{
+#tab-01 .title .image img{
     width: 100%;
     border-radius: 10px;
 }
-.container #tab-01 .title .text{
+#tab-01 .title .text{
     font-size: 2em;
+}
+#tab-01 .list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tab-01 .list li{
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 2em;
+    background: var(--sidebar-clr);
+    transition: all 0.5s ease;
+}
+#tab-01 .list li:hover{
+    background: var(--primary-clr);
+    color: var(--sidebar-clr);
+}
+
+/* -------------- tab - 02 -------------- */
+
+#tab-02{
+    justify-content: center;
+    align-items: center;
+}
+#tab-02 .list{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 10px;
+    position: relative;
+}
+#tab-02 .list li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 200px;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+#tab-02 .list li:hover{
+    background: var(--primary-clr);
+    color: var(--sidebar-clr);
+}
+#tab-02 .list li.on{
+    background: var(--primary-clr);
+    color: var(--sidebar-clr);
 }

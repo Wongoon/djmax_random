@@ -33,8 +33,8 @@ body{
     cursor: pointer;
     border: 1px solid #ccc;
 }
-.sidebar.close li{
-    border: 1px solid #fff;
+.sidebar.close li .text{
+    display: none;
 }
 .sidebar header .image,
 .sidebar .icon{
@@ -144,6 +144,12 @@ header .image-text .name {
 .sidebar li.current .text{
     color: var(--sidebar-clr);
 }
+.sidebar .search-box:hover{
+    background: var(--primary-clr-light);
+}
+.sidebar .search-box:hover .icon{
+    color: var(--text-clr);
+}
 .container{
     position: absolute;
     top: 0;
@@ -160,6 +166,7 @@ header .image-text .name {
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
+    width: 100%;
 }
 .container .tab-content.active{
     display: flex;

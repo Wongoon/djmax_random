@@ -28,11 +28,11 @@
                     <input type="text" placeholder="Search..." readonly id="search">
                 </li>
                 <ul class="menu-links">
-                    <li class="nav-link current" data-tab="tab-01">
+                    <li id="tab01" class="nav-link" data-tab="tab-01">
                         <i class='bx bx-home-alt icon'></i>
                         <span class="text nav-text">Home</span>
                     </li>
-                    <li class="nav-link" data-tab="tab-02">
+                    <li id="tab02" class="nav-link current" data-tab="tab-02">
                         <i class='bx bx-shuffle icon'></i>
                         <span class="text nav-text">Random</span>
                     </li>
@@ -41,16 +41,45 @@
         </div>
     </nav>
     <div class="container">
-        <section id="tab-01" class="tab-content active">
+        <section id="tab-01" class="tab-content">
             <div class="title">
                 <span class="image">
                     <img src="img/logo.png" alt="logo">
                 </span>
                 <div class="text">DJMAX Web Tool</div>
             </div>
+            <ul class="list">
+                <li data-tab="tab-02">
+                    <span class="text">Random</span>
+                </li>
+            </ul>
         </section>
-        <section id="tab-02" class="tab-content">
-            tab2
+        <section id="tab-02" class="tab-content active">
+            <ul class="list">
+                <li id="respect">respect</li>
+                <li id="portable">portable 1</li>
+                <li id="portable2">portable 2</li>
+                <li id="portable3">portable 3</li>
+                <li id="trilogy">trilogy</li>
+                <li id="clazziquai">clazziquai</li>
+                <li id="blacksquare">black square</li>
+                <li id="vextension">v extension</li>
+                <li id="vextension2">v extension 2</li>
+                <li id="emotionalsense">emotional sense</li>
+                <li id="technika1">technika 1</li>
+                <li id="technika2">technika 2</li>
+                <li id="technika3">technika 2</li>
+                <li id="technikatuneq">technika tune & q</li>
+                <li id="guiltygear">guilty gear</li>
+                <li id="girlsfrontline">girl's frontline</li>
+                <li id="groovecoaster">groove coaster</li>
+                <li id="deemo">deemo</li>
+                <li id="cytus">cytus</li>
+                <li id="chunithm">chunithm</li>
+                <li id="estimate">estimate</li>
+                <li id="nexon">nexon</li>
+                <li id="musedash">muse dash</li>
+            </ul>
         </section>
     </div>
     <script src="javascript/index.js"></script>
