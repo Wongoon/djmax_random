@@ -44,6 +44,7 @@
 #tab-02{
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 #tab-02 .list{
     display: grid;
@@ -73,4 +74,20 @@
 #tab-02 .list li.on{
     background: var(--primary-clr);
     color: var(--sidebar-clr);
+}
+#tab-02 .song{
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 20px;
+}
+#tab-02 .song .title{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 3px solid #ccc;
+}
+#tab-02 .song .songlist{
+    height: calc(100vh - 130px);
+    overflow: hidden auto;
 }
