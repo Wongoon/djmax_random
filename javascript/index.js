@@ -53,9 +53,7 @@ function addsong(song, id){
 
 function removesong(song, id){
     Object.keys(song['songs'][id]).forEach(function(key){
-        const li = document.querySelectorAll('#songlist li');
-        Object.keys(li).forEach(function(){
-            this.remove();
-        });
+        const li = document.querySelectorAll('#songlist .' + id);
+        li[0].remove();
     });
 }

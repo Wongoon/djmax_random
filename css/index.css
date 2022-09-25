@@ -76,7 +76,7 @@
     color: var(--sidebar-clr);
 }
 #tab-02 .song{
-    width: 500px;
+    width: 600px;
     border: 1px solid #ccc;
     border-radius: 6px;
     margin: 20px;
@@ -90,4 +90,9 @@
 #tab-02 .song .songlist{
     height: calc(100vh - 130px);
     overflow: hidden auto;
+}
+#tab-02 .song .songlist li{
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
 }
