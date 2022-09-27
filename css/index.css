@@ -24,10 +24,11 @@
     align-items: center;
 }
 #tab-01 .list li{
+    margin: 10px;
     cursor: pointer;
-    width: 200px;
+    width: 300px;
     text-align: center;
-    padding: 12px;
+    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 2em;

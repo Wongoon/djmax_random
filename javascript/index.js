@@ -3,14 +3,13 @@ const sidebar = body.querySelector('nav');
 const toggle = body.querySelector(".toggle");
 const searchBtn = body.querySelector(".search-box");
 const searchBox = document.getElementById('search');
-const randomlist = body.querySelectorAll('#tab-02 .list li');
-const ul = document.getElementById('songlist');
+const randomlist = document.querySelectorAll('#tab-02 .list li');
+const ul = document.querySelector('#songlist');
 var requestURL = 'json/list.json';
 var request = new XMLHttpRequest();
 var songlist;
 var list = [];
 var count = 0;
-console.log(list);
 
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -34,7 +33,7 @@ searchBox.addEventListener('click', function () {
 for (let el of randomlist) {
     el.addEventListener('click', e => {
         e.currentTarget.classList.toggle('on');
-        if (e.currentTarget.getAttribute('class') == 'on') {
+        if (e.currentTarget.getAttribute('class') == 'dlc on') {
             addsong(songlist, e.currentTarget.getAttribute('id'));
         }
         else {
@@ -69,6 +68,10 @@ function removeArray(id) {
     if(idx > -1){
         list.splice(idx, 1);
     }
+}
+
+function clearSong(id) {
+    
 }
 
 /*
