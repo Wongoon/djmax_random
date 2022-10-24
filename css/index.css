@@ -43,13 +43,11 @@
 /* -------------- tab - 02 -------------- */
 
 #tab-02{
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
 }
 #tab-02 .list{
     display: grid;
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(4, 200px);
     gap: 10px;
     position: relative;
 }
@@ -77,6 +75,8 @@
     color: var(--sidebar-clr);
 }
 #tab-02 .song{
+    position: fixed;
+    right: 10px;
     width: 600px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -96,4 +96,41 @@
     border-bottom: 1px solid #ccc;
     padding: 10px;
     text-align: center;
+}
+#tab-02 section{
+    display: none;
+    width: calc(100% - 630px);
+    /* width: 100%; */
+}/*
+.sidebar.close ~ .container #tab-02 section{
+    width: calc(100% - 250px - 630px);
+}*/
+#tab-02 section.on{
+    display: block;
+}
+#tab-02 #tab-content-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+}
+#tab-02 #tab-content-list li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    width: 140px;
+    height: 50px;
+    padding: 5px;
+    margin: 0 2px;
+    background: var(--primary-clr-light);
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#tab-02 #tab-content-list li.on,
+#tab-02 #tab-content-list li:hover{
+    border-bottom: 2px solid var(--primary-clr);
+    color: var(--primary-clr);
 }
